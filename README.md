@@ -10,22 +10,22 @@
 * Only choose one letter
 
 ## Classes:
-Joseph Perez
-+parachute 
-    figure: string
-    render(): will render the parachute and the monkey
-Daniel Parra
-+word  
-    word: list
-    selected_word: random string from word list
-Gloria Rosado
-+player 
-    letter: string
-    alive: boolean
-    life_counter: int
-Jonathan Uribe and Thomas Villalobos
-+driver 
-    answer: string
-    game(): Will call methods in a loop
-    display(): string
-    update(): Check if player is alive or check logic
+- Joseph Perez
++ parachute 
+-    figure: string
+-    render(): will render the parachute and the monkey
+-Daniel Parra
+- + word  
+-    word: list
+-    selected_word: random string from word list
+- Gloria Rosado
+- + player 
+-    letter: string
+-    alive: boolean
+-    life_counter: int
+- Jonathan Uribe and Thomas Villalobos
+- + driver 
+-    answer: string
+-    game(): Will call methods in a loop
+-   display(): string
+-    update(): Check if player is alive or check logic
