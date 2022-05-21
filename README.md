@@ -15,8 +15,11 @@
 2. render(): will render the parachute and the monkey
 ## Daniel Parra
 - word  
-1. word: list
-2. selected_word: random string from word list
+1. _selected_word: string, private 
+2. hidden_word: string, public
+3. set_new_word(): creates a new word from word list
+4. letter_validation(letter): compares letter with selected_word
+5. get_word(): returns _selected_word. 
 ## Gloria Rosado
 - player 
 1. letter: string
