@@ -3,7 +3,7 @@ from word import Word
 class parachute:
     def __init__(self):
         self.parachute=deque([" ___","/___\\","\\   /"," \\ /","  O"," /|\\"," / \\"])
-        self.attemps = 0
+        self.attemps = len(self.parachute) - 3
         self.words = Word()
     #Will render the parachute
     def render(self):
@@ -12,7 +12,17 @@ class parachute:
         print("\n^^^^^^^")
     #Cut the parachute by parts
     def cut_parachute(self):
-        self.attemps = len(self.parachute) - 3  
+        self.attemps -= 1 
         self.parachute.popleft()
-        if self.attemps - 3 <= 0:
+        if self.attemps <= 0:
             self.parachute[0] = "  x"
+
+para = parachute()
+para.render()
+para.cut_parachute()
+para.render()
+para.cut_parachute()
+para.render()
+para.cut_parachute()
+para.render()
+para.cut_parachute()
