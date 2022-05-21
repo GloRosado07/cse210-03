@@ -5,24 +5,21 @@ class parachute:
         self.parachute=deque([" ___","/___\\","\\   /"," \\ /","  O"," /|\\"," / \\"])
         self.attemps = len(self.parachute) - 3
         self.words = Word()
+        self.word = self.words.set_new_word()
     #Will render the parachute
     def render(self):
+        self.words.set_hidden_word()
+        print(self.words.hidden_word)
+        print(self.words._selected_word)
         for i in self.parachute:
             print(f" {i}")
         print("\n^^^^^^^")
     #Cut the parachute by parts
     def cut_parachute(self):
-        self.attemps -= 1 
         self.parachute.popleft()
+        self.attemps -= 1 
         if self.attemps <= 0:
             self.parachute[0] = "  x"
-
-para = parachute()
-para.render()
-para.cut_parachute()
-para.render()
-para.cut_parachute()
-para.render()
-para.cut_parachute()
-para.render()
-para.cut_parachute()
+parachute().render()
+parachute().render()
+parachute().render()

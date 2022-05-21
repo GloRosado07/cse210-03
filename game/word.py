@@ -1,4 +1,5 @@
 import random
+from collections import deque
 class Word:
     """
     A secret word to be hidden for the player.
@@ -21,7 +22,10 @@ class Word:
         Generates a random word from a list and
         save it in _selected_word.
         """
-        word_list = ["bread","cake","milk"]
+        word_list = []
+        with open("game/words.csv", 'r') as data:
+            for i in data:
+                word_list.append(i)
         self._selected_word = random.choice(word_list)
 
     def get_word(self):

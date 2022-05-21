@@ -8,29 +8,6 @@
 * If the player has no more parachute the game is over.
 # Rules 
 * Only choose one letter
-<<<<<<< HEAD
-
-## Classes:
-### Joseph Perez
-+ parachute 
-    figure: string
--    render(): will render the parachute and the monkey
-### Daniel Parra
-- + word  
--    word: list
--    selected_word: random string from word list
-### Gloria Rosado
-- + player 
--    letter: string
--    alive: boolean
--    life_counter: int
-### Jonathan Uribe and Thomas Villalobos
-- + driver 
--    answer: string
--    game(): Will call methods in a loop
--   display(): string
--    update(): Check if player is alive or check logic
-=======
 # Classes
 ## Joseph Perez
 - parachute 
@@ -51,4 +28,3 @@
 2. game(): Will call methods in a loop
 3. display(): string
 4. update(): Check if player is alive or check logic
->>>>>>> 228ac0baaee958bbbb473827cfbc7278d218f7e9
