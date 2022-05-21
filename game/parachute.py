@@ -16,16 +16,3 @@ class parachute:
         self.parachute.popleft()
         if self.attemps - 3 <= 0:
             self.parachute[0] = "  x"
-
-
-
-para = parachute()
-para.render()
-para.cut_parachute()
-para.render()
-para.cut_parachute()
-para.render()
-para.cut_parachute()
-para.render()
-para.cut_parachute()
-para.render()
