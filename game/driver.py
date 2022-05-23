@@ -40,13 +40,13 @@ class Driver:
         self._word.get_word()
         self._parachute.__init__(self._word.cut_parachute())
 
-    def _get_input(self):
-        ask_player = input("\nGuess a letter [a-z]: ")
-        self._player.set_input(ask_player)
+   # def _get_input(self):
+   #    ask_player = input("\nGuess a letter [a-z]: ")
+   #     self._player.set_input(ask_player)
 
     def _do_update(self):
 
-        self._word.letter_validation(self._player.get_input())
+   #     self._word.letter_validation(self._player.get_input())
         self._parachute.__init__(self._word.cut_parachute())
         if self._word.letter_validation() == 1:
         
@@ -54,7 +54,7 @@ class Driver:
             It will keep asking the user for an input letter and display answer. 
             '''
             
-            self._word.letter_validation(self._player.get_input())
+   #         self._word.letter_validation(self._player.get_input())
             self._parachute.__init__(self._word.cut_parachute())
             
         if self._word.letter_validation() == 1 or self._word.cut_parachute() == 7:
