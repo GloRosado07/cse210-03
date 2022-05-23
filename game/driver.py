@@ -37,8 +37,8 @@ class Driver:
         Ask the user for a letter
         Display the figure of the man with a parachute.
         '''
-        self._word._get_word()
-        self._parachute._body(self._word._get_wrong_guesses())
+        self._word.get_word()
+        self._parachute.__init__(self._word.cut_parachute())
 
     def _get_input(self):
         ask_player = input("\nGuess a letter [a-z]: ")
@@ -46,18 +46,18 @@ class Driver:
 
     def _do_update(self):
 
-        self._word._check_word(self._player.get_input())
-        self._parachute._body(self._word._get_wrong_guesses())
-        if self._word._check_win() == 1:
+        self._word.letter_validation(self._player.get_input())
+        self._parachute.__init__(self._word.cut_parachute())
+        if self._word.letter_validation() == 1:
         
             '''
             It will keep asking the user for an input letter and display answer. 
             '''
             
-            self._word._check_word(self._player.get_input())
-            self._parachute._body(self._word._get_wrong_guesses())
+            self._word.letter_validation(self._player.get_input())
+            self._parachute.__init__(self._word.cut_parachute())
             
-        if self._word._check_win() == 1 or self._word._get_wrong_guesses() == 7:
+        if self._word.letter_validation() == 1 or self._word.cut_parachute() == 7:
             self._play_game = False
 
 
