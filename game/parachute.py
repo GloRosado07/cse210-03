@@ -5,7 +5,6 @@ class parachute:
         self.attemps = len(self.parachute) - 3
     #Will render the parachute
     def render(self):
-        print(self.words._selected_word)
         for i in self.parachute:
             print(f" {i}")
         print("\n^^^^^^^")
