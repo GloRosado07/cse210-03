@@ -30,6 +30,7 @@ class Player:
 
         if not validate: 
             life -= 1 
+        
 
 
 
