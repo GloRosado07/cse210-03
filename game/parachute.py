@@ -8,7 +8,7 @@ class parachute:
         self.word = self.words.set_new_word()
     #Will render the parachute
     def render(self):
-        self.words.set_hidden_word()
+        self.words._set_hidden_word()
         print(self.words.hidden_word)
         print(self.words._selected_word)
         for i in self.parachute:
