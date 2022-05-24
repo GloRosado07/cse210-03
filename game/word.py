@@ -23,9 +23,9 @@ class Word:
         the set_hidden_word method.
         """
         word_list = []
-        with open("game/words.csv", 'r') as data:
+        with open('game/words.csv') as data:
             for i in data:
-                word_list.append(i)
+                word_list.append(i.rstrip())
         self._selected_word = random.choice(word_list)
         self._set_hidden_word()
 
@@ -40,6 +40,7 @@ class Word:
         Set the number of letters in _selected_word as
         "_" in the hidden_word attribute.
         """
+        self.hidden_word = ""
         for _ in self._selected_word:
             self.hidden_word += "_ "
         self.hidden_word = self.hidden_word [:-1]
