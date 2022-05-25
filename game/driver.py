@@ -1,7 +1,6 @@
 from game.word import Word
 from game.player import Player
 from game.parachute import Parachute
-
 class Driver:
     '''
     The Driver class will start the game. 
@@ -37,9 +36,6 @@ class Driver:
             if not self.bool: 
                 self.parachute.cut_parachute()
             self.do_update()
-            
-
-
     def do_output(self):
         '''
         Display the figure of the man with a parachute.
@@ -54,31 +50,14 @@ class Driver:
         '''
         self.player._set_letter(input("\nGuess a letter [a-z]: "))
         self.ask_player = self.player.validation
-    
-
-
     def do_update(self):
-
-   #     self._word.letter_validation(self._player.get_input())
-   #     self._parachute.__init__(self._parachute.cut_parachute())
-   #     if self._word.letter_validation() == 1:
-        
-   #         '''
-   #         It will keep asking the user for an input letter and display answer. 
-   #         '''
-            
-   #         self._word.letter_validation(self._player.get_input())
-   #        self._parachute.__init__(self._parachute.cut_parachute())
-            
-   #    if self._word.letter_validation() == 1 or self._parachute.cut_parachute() == 7:
-   #         self._play_game = False
-
         '''
         It will keep continuing until the parachute disappears 
         '''
-        
-        if self.parachute.attemps <= 0:
-            self.do_output()
-            self.play_game = False
+        if not "_ " in self._word.hidden_word:
+            print("You win!")
+        if self._parachute.attemps <= 0:
+            self._play_game = False
             print("Game Over")
+            print("The word was: " + self._word.get_word())
 
