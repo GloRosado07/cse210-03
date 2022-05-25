@@ -5,8 +5,7 @@ Encapsulation: Demonstrate how encapsulation works on a program that controls ac
 * Deque
 * Random
 
-# Jumper:
-    It is a game in which the player seeks to solve a puzzle by guessing the letters of a secret word one at a time. 
+# Jumper is a game in which the player seeks to solve a puzzle by guessing the letters of a secret word one at a time. 
 
 # Jumper Game
 * The puzzle is a secret word randomly chosen from a list.
