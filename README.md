@@ -7,7 +7,7 @@ Encapsulation: Demonstrate how encapsulation works on a program that controls ac
 
 # Jumper is a game in which the player seeks to solve a puzzle by guessing the letters of a secret word one at a time. 
 
-# Jumper Game
+# Game Instructions:
 * The puzzle is a secret word randomly chosen from a list.
 * The player guesses a letter in the puzzle.
 * If the guess is correct, the letter is revealed.
