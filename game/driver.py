@@ -50,14 +50,18 @@ class Driver:
         '''
         self.player._set_letter(input("\nGuess a letter [a-z]: "))
         self.ask_player = self.player.validation
+
     def do_update(self):
         '''
         It will keep continuing until the parachute disappears 
         '''
-        if not "_ " in self._word.hidden_word:
+        if not "_" in self.word.hidden_word:
             print("You win!")
-        if self._parachute.attemps <= 0:
-            self._play_game = False
+            self.play_game = False
+            self.do_output()
+        if self.parachute.attemps <= 0:
+            self.do_output()
+            self.play_game = False
             print("Game Over")
-            print("The word was: " + self._word.get_word())
+            print("The word was: " + self.word.get_word())
 
