@@ -1,5 +1,5 @@
 from collections import deque
-class parachute:
+class Parachute:
     def __init__(self):
         self.parachute=deque([" ___","/___\\","\\   /"," \\ /","  O"," /|\\"," / \\"])
         self.attemps = len(self.parachute) - 3

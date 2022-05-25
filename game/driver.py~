@@ -1,6 +1,6 @@
-from game.word import Word
-from game.player import Player
-from game.parachute import Parachute
+from parachute import parachute
+from word import Word
+from player import Player
 
 class Driver:
     '''
@@ -19,47 +19,35 @@ class Driver:
         self.word = Word()
         self.play_game = True
         self.player = Player()
-        self.parachute = Parachute()
+        self.parachute = parachute()
         self.bool = None
-        self.ask_player = ''
-        self.counter = 0
+
+
     def start_game(self):
         '''
         Starts the game
         
         '''
-        self.word.set_new_word()
+        self._word.set_new_word()
 
         while self.play_game:
             self.do_output()
             self.get_input()
-            self.bool = self.word.letter_validation(self.ask_player)
-            if not self.bool:
-                
-                self.parachute.cut_parachute()
-
-            self.do_update()
-            
+            self.bool = word.letter_validation(r)
+            self.do_update() 
 
 
     def do_output(self):
         '''
         Display the figure of the man with a parachute.
         '''
-        print(self.word.hidden_word)
-        self.parachute.render()
-        if not self.bool:
-            for i in range(0,self.counter):
-                self.counter+=1
-                print()
+        self._parachute.render()
 
     def get_input(self):
         '''
          Ask the user for a letter
         '''
-        self.player._set_letter(input("\nGuess a letter [a-z]: "))
-        self.ask_player = self.player.validation
-    
+        ask_player = player.set_letter(input("\nGuess a letter [a-z]: "))
 
 
     def do_update(self):
@@ -81,9 +69,8 @@ class Driver:
         '''
         It will keep continuing until the parachute disappears 
         '''
-        
-        if self.parachute.attemps <= 0:
-            self.do_output()
+
+        if self._parachute.attemps <= 0:
             self.play_game = False
             print("Game Over")
 

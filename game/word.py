@@ -13,9 +13,8 @@ class Word:
         """
         Constructs a new instance of Word.
         """
-        self._selected_word = None
+        self._selected_word = ''
         self.hidden_word = ""
-    
     def set_new_word(self):
         """
         Generates a random word from a list and
@@ -28,7 +27,6 @@ class Word:
                 word_list.append(i.rstrip())
         self._selected_word = random.choice(word_list)
         self._set_hidden_word()
-
     def get_word(self):
         """
         Getter for _selected_word attribute.
