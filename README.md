@@ -22,7 +22,7 @@ Encapsulation: Demonstrate how encapsulation works on a program that controls ac
 - parachute 
 1. figure: string
 2. render(): will render the parachute and the monkey
-3. per16068@byui.edu
+*  per16068@byui.edu
   
 ## Daniel Parra
 - word  
@@ -31,14 +31,14 @@ Encapsulation: Demonstrate how encapsulation works on a program that controls ac
 3. set_new_word(): creates a new word from word list
 4. letter_validation(letter): compares letter with selected_word
 5. get_word(): returns _selected_word. 
-  par21002@byui.edu
+*  par21002@byui.edu
   
 ## Gloria Rosado
 - player 
 1. letter: string
 2. alive: boolean
 3. life_counter: int
-4. ros21035@byui.edu
+*  ros21035@byui.edu
 
 ## Jonathan Uribe and Thomas Villalobos
 - driver 
@@ -46,7 +46,7 @@ Encapsulation: Demonstrate how encapsulation works on a program that controls ac
 2. game(): Will call methods in a loop
 3. display(): string
 4. update(): Check if player is alive or check logic
-5. u266801382@byui.edu and vil22003@byui.edu
+*  u266801382@byui.edu and vil22003@byui.edu
 
 # Project Structure
 
