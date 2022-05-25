@@ -46,7 +46,8 @@ Encapsulation: Demonstrate how encapsulation works on a program that controls ac
 2. game(): Will call methods in a loop
 3. display(): string
 4. update(): Check if player is alive or check logic
-*  u266801382@byui.edu and vil22003@byui.edu
+*  u266801382@byui.edu 
+*  vil22003@byui.edu
 
 # Project Structure
 
