@@ -34,10 +34,8 @@ class Driver:
             self.do_output()
             self.get_input()
             self.bool = self.word.letter_validation(self.ask_player)
-            if not self.bool:
-                
+            if not self.bool: 
                 self.parachute.cut_parachute()
-
             self.do_update()
             
 
@@ -47,11 +45,8 @@ class Driver:
         Display the figure of the man with a parachute.
         '''
         print(self.word.hidden_word)
+        print()
         self.parachute.render()
-        if not self.bool:
-            for i in range(0,self.counter):
-                self.counter+=1
-                print()
 
     def get_input(self):
         '''
