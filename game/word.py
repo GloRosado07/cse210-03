@@ -25,7 +25,7 @@ class Word:
         with open('game/words.csv') as data:
             for i in data:
                 word_list.append(i.rstrip())
-        self._selected_word = 'word'#random.choice(word_list)
+        self._selected_word = random.choice(word_list)
         self._set_hidden_word()
     def get_word(self):
         """
