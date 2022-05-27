@@ -22,6 +22,7 @@ class Driver:
         self.bool = None
         self.ask_player = ''
         self.counter = 0
+
     def start_game(self):
         '''
         Starts the game
