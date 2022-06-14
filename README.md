@@ -40,7 +40,9 @@ Encapsulation: Demonstrate how encapsulation works on a program that controls ac
 3. life_counter: int
 *  ros21035@byui.edu
 
-## Jonathan Uribe and Thomas Villalobos
+## Thomas Villalobos
+## Jonathan Uribe
+
 - driver 
 1. answer: string
 2. game(): Will call methods in a loop
